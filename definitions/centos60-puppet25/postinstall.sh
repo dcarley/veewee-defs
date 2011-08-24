@@ -16,7 +16,7 @@ fail()
 # Installing vagrant keys.
 mkdir /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
-wget -P /home/vagrant/.ssh --no-check-certificate 'http://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub' -O authorized_keys
+wget -P /home/vagrant/.ssh --no-check-certificate 'http://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub'
 chown -R vagrant /home/vagrant/.ssh
 
 # Installing the virtualbox guest additions.
