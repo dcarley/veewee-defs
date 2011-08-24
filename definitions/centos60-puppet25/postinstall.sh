@@ -20,7 +20,7 @@ wget -P /home/vagrant/.ssh --no-check-certificate 'http://github.com/mitchellh/v
 chown -R vagrant /home/vagrant/.ssh
 
 # Installing the virtualbox guest additions.
-yum -y kernel-devel-`uname -r`
+yum -y install kernel-devel-`uname -r`
 VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
 wget -P /tmp http://download.virtualbox.org/virtualbox/${VBOX_VERSION}/VBoxGuestAdditions_${VBOX_VERSION}.iso
 mount -o loop /tmp/VBoxGuestAdditions_${VBOX_VERSION}.iso /mnt
