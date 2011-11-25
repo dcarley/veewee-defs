@@ -28,6 +28,10 @@ sh /mnt/VBoxLinuxAdditions.run
 umount /mnt
 rm /tmp/VBoxGuestAdditions_${VBOX_VERSION}.iso
 
+# Make image sparse by zeroing space.
+dd if=/dev/zero of=/EMPTY bs=1M || true
+rm -f /EMPTY
+
 #poweroff -h
 yum -y clean all
 
