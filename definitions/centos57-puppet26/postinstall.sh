@@ -4,14 +4,8 @@
 set -e
 date > /etc/vagrant_box_build_time
 
-fail()
-{
-  echo "FATAL: $*"
-  exit 1
-}
-
-#yum -y update
-#yum -y upgrade
+# Update within point release.
+yum -y update
 
 # Installing vagrant keys.
 mkdir /home/vagrant/.ssh
@@ -28,11 +22,11 @@ sh /mnt/VBoxLinuxAdditions.run
 umount /mnt
 rm /tmp/VBoxGuestAdditions_${VBOX_VERSION}.iso
 
+# Remove Yum caches.
+yum -y clean all
+
 # Make image sparse by zeroing space.
 dd if=/dev/zero of=/EMPTY bs=1M || true
 rm -f /EMPTY
-
-#poweroff -h
-yum -y clean all
 
 exit
