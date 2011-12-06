@@ -13,15 +13,6 @@ chmod 700 /home/vagrant/.ssh
 wget --no-check-certificate -O /home/vagrant/.ssh/authorized_keys https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub
 chown -R vagrant /home/vagrant/.ssh
 
-# Installing the virtualbox guest additions.
-yum -y install kernel-devel-`uname -r`
-VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
-wget -P /tmp http://download.virtualbox.org/virtualbox/${VBOX_VERSION}/VBoxGuestAdditions_${VBOX_VERSION}.iso
-mount -o loop /tmp/VBoxGuestAdditions_${VBOX_VERSION}.iso /mnt
-sh /mnt/VBoxLinuxAdditions.run
-umount /mnt
-rm /tmp/VBoxGuestAdditions_${VBOX_VERSION}.iso
-
 # Remove Yum caches.
 yum -y clean all
 
