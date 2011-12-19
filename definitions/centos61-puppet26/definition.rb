@@ -1,5 +1,5 @@
 Veewee::Session.declare({
-  :cpu_count => '1', :memory_size=> '384',
+  :cpu_count => '1', :memory_size=> '512',
   :disk_size => '10140', :disk_format => 'VDI', :hostiocache => 'off',
   :os_type_id => 'RedHat_64',
   :iso_file => "CentOS-6.1-x86_64-bin-DVD1.iso",
