@@ -1,3 +1,4 @@
-source "http://rubygems.org"
-gem "vagrant", "~> 0.8"
-gem "veewee", "0.2.2"
+source :rubygems
+
+gem "vagrant", "~> 0.9"
+gem "veewee", "~> 0.2.3"
