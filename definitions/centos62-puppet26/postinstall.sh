@@ -1,10 +1,11 @@
 #!/bin/bash
-#http://chrisadams.me.uk/2010/05/10/setting-up-a-centos-base-box-for-development-and-testing-with-vagrant/
+#
+# http://chrisadams.me.uk/2010/05/10/setting-up-a-centos-base-box-for-development-and-testing-with-vagrant/
 
 set -e
 date > /etc/vagrant_box_build_time
 
-# Update within point release.
+# Update within major version.
 yum -y update
 
 # Installing vagrant keys.
