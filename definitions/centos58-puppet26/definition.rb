@@ -9,8 +9,6 @@ Veewee::Session.declare({
   :iso_src => "http://be.mirror.eurid.eu/centos/5.8/isos/x86_64/CentOS-5.8-x86_64-bin-DVD-1of2.iso",
   :iso_md5 => "8a3bf0030f192022943f83fe6b2cf373",
   :iso_download_timeout => 1000,
-  :iso_download_instructions => "We can not download the ISO , you need to download it yourself and put it in the iso directory\n"+
-  "- URL: http://isoredirect.centos.org/centos/5/isos/x86_64/ ",
   :boot_wait => "10",
   :boot_cmd_sequence => [
     '<Tab> text ks=http://%IP%:%PORT%/ks.cfg<Enter>'
