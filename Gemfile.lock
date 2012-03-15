@@ -48,6 +48,9 @@ GEM
       log4r (~> 1.1.9)
       net-scp (~> 1.0.4)
       net-ssh (~> 2.2.2)
+    vagrant-vbguest (0.2.1)
+      vagrant (>= 0.9.4)
+      virtualbox (~> 0.9.1)
     veewee (0.2.3)
       cucumber (>= 1.0.0)
       highline (~> 1.6.1)
@@ -66,4 +69,5 @@ PLATFORMS
 
 DEPENDENCIES
   vagrant (~> 0.9)
+  vagrant-vbguest (~> 0.2.0)
   veewee (~> 0.2.3)

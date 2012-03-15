@@ -2,3 +2,4 @@
 vendor
 iso
 *.box
+.vagrant
