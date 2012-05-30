@@ -3,7 +3,7 @@ Veewee::Session.declare({
   :memory_size=> '512',
   :disk_size => '10140',
   :disk_format => 'VDI',
-  :hostiocache => 'off',
+  :hostiocache => 'on',
   :os_type_id => 'RedHat_64',
   :iso_file => "CentOS-6.2-x86_64-bin-DVD1.iso",
   :iso_src => "http://be.mirror.eurid.eu/centos/6.2/isos/x86_64/CentOS-6.2-x86_64-bin-DVD1.iso",

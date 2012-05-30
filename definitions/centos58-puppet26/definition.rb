@@ -3,7 +3,7 @@ Veewee::Session.declare({
   :memory_size=> '384',
   :disk_size => '10140',
   :disk_format => 'VDI',
-  :hostiocache => 'off',
+  :hostiocache => 'on',
   :os_type_id => 'RedHat_64',
   :iso_file => "CentOS-5.8-x86_64-bin-DVD-1of2.iso",
   :iso_src => "http://be.mirror.eurid.eu/centos/5.8/isos/x86_64/CentOS-5.8-x86_64-bin-DVD-1of2.iso",
